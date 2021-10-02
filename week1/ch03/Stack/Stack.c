@@ -52,8 +52,13 @@ void Pop(Stack S) {//出栈操作
 		free(FirstCell);
 	}
 }
+void DisposeStack(Stack S) {//删除栈
+	if (!IsEmpty)
+		Pop(S);
+	free(S);
+}
 
-int main() {
+int main() {//测试
 	Stack S;
 	S=CreatStack();
 	for (int i = 0; i < 5; i++) {
@@ -65,5 +70,6 @@ int main() {
 		Pop(S);
 		printf("出栈成功！\n");
 		printf("当前栈顶元素为：%d\n", Top(S));
+		DisposeStack(S);
 
 }
