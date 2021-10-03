@@ -18,6 +18,7 @@ Position Header(List L);
 Position First(List L);
 Position Advance(Position P);
 int Retrieve(Position P);
+List ReverseList(List L);
 #endif
 
 struct Node {
