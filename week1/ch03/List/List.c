@@ -70,6 +70,15 @@ void Insert(int X, List L, Position P) {//插入操作（插入到P的后面）
 	TmpCell->Next = P->Next;
 	P->Next = TmpCell;
 }
+void DeleteList(List L) {//销毁链表
+	Position p;
+	while (L->Next) {
+		p = L->Next;
+		L->Next = p->Next;
+		free(p);
+	}
+	free(L);
+}
 
 int main() {
 	Position p;
