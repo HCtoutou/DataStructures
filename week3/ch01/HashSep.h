@@ -1,3 +1,4 @@
+//分离链接法
 #pragma once
 struct ListNode;
 typedef struct ListNode* Position;
