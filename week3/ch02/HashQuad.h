@@ -1,3 +1,4 @@
+//开放定址法
 #pragma once
 typedef unsigned int Index;
 typedef Index Position;
